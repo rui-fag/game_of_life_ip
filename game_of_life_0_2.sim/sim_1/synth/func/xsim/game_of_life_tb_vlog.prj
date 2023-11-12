@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"game_of_life_tb_func_synth.v" \
+"../../../../../game_of_life_0_2.srcs/sim_1/new/game_of_life_tb.v" \
+
+# Do not sort compile order
+nosort

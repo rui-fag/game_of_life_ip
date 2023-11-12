@@ -1,0 +1,7 @@
+Running: xsim.dir/game_of_life_tb_func_synth/xsimk.exe -simmode gui -wdb game_of_life_tb_func_synth.wdb -simrunnum 0 -socket 62607
+Design successfully loaded
+Design Loading Memory Usage: 123456 KB (Peak: 123456 KB)
+Design Loading CPU Usage: 218 ms
+Simulation completed
+Simulation Memory Usage: 127044 KB (Peak: 127044 KB)
+Simulation CPU Usage: 5328 ms

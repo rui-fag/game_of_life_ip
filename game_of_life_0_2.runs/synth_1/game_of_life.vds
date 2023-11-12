@@ -1,0 +1,228 @@
+#-----------------------------------------------------------
+# Vivado v2023.1.1 (64-bit)
+# SW Build 3900603 on Fri Jun 16 19:31:24 MDT 2023
+# IP Build 3900379 on Sat Jun 17 05:28:05 MDT 2023
+# SharedData Build 3899622 on Fri Jun 16 03:34:24 MDT 2023
+# Start of session at: Mon Nov  6 21:06:53 2023
+# Process ID: 18096
+# Current directory: C:/Users/ruifa/Documents/Vivado/game_of_life_0_2/game_of_life_0_2.runs/synth_1
+# Command line: vivado.exe -log game_of_life.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source game_of_life.tcl
+# Log file: C:/Users/ruifa/Documents/Vivado/game_of_life_0_2/game_of_life_0_2.runs/synth_1/game_of_life.vds
+# Journal file: C:/Users/ruifa/Documents/Vivado/game_of_life_0_2/game_of_life_0_2.runs/synth_1\vivado.jou
+# Running On: DESKTOP-LAN5H42, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 16558 MB
+#-----------------------------------------------------------
+source game_of_life.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ruifa/Downloads'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental C:/Users/ruifa/Documents/Vivado/game_of_life_0_2/game_of_life_0_2.srcs/utils_1/imports/synth_1/game_of_life.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/ruifa/Documents/Vivado/game_of_life_0_2/game_of_life_0_2.srcs/utils_1/imports/synth_1/game_of_life.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top game_of_life -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 11640
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1956.250 ; gain = 409.082
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'game_of_life' [C:/Users/ruifa/Documents/Vivado/game_of_life_0_2/game_of_life_0_2.srcs/sources_1/new/game_of_life.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'game_of_life' (0#1) [C:/Users/ruifa/Documents/Vivado/game_of_life_0_2/game_of_life_0_2.srcs/sources_1/new/game_of_life.v:3]
+WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [C:/Users/ruifa/Documents/Vivado/game_of_life_0_2/game_of_life_0_2.srcs/sources_1/new/game_of_life.v:134]
+WARNING: [Synth 8-3917] design game_of_life has port data_out_0[0] driven by constant 0
+WARNING: [Synth 8-3917] design game_of_life has port data_out_3[31] driven by constant 0
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:01:30 ; elapsed = 00:01:35 . Memory (MB): peak = 3531.281 ; gain = 1984.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:37 ; elapsed = 00:01:43 . Memory (MB): peak = 3531.281 ; gain = 1984.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:37 ; elapsed = 00:01:43 . Memory (MB): peak = 3531.281 ; gain = 1984.113
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+---------------------------------------------------------------------------------
+Start Preparing Guide Design
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6702] IncrSynth : Design change found in an area of the design that prevents previous synthesis information being used, Reverting to default synthesis
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:01:53 ; elapsed = 00:02:00 . Memory (MB): peak = 4414.582 ; gain = 2867.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:01:53 ; elapsed = 00:02:00 . Memory (MB): peak = 4414.582 ; gain = 2867.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:57 ; elapsed = 00:03:06 . Memory (MB): peak = 4414.582 ; gain = 2867.414
+---------------------------------------------------------------------------------
+
+
+Incremental Synthesis Report Summary:
+
+1. Incremental synthesis run: no
+
+   Reason for not running incremental synthesis : Design change found in an area of the design that prevents previous synthesis information being used
+
+
+INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   8 Input    4 Bit       Adders := 3654  
+	   6 Input    4 Bit       Adders := 126   
++---Registers : 
+	                1 Bit    Registers := 7562  
++---Muxes : 
+	   2 Input    1 Bit        Muxes := 7560  
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3917] design game_of_life has port data_out_0[0] driven by constant 0
+WARNING: [Synth 8-3917] design game_of_life has port data_out_3[31] driven by constant 0
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\matrix1_reg[0][0] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:34 ; elapsed = 00:04:16 . Memory (MB): peak = 4414.582 ; gain = 2867.414
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:03:40 ; elapsed = 00:04:23 . Memory (MB): peak = 4414.582 ; gain = 2867.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:03:47 ; elapsed = 00:04:36 . Memory (MB): peak = 4414.582 ; gain = 2867.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:03:56 ; elapsed = 00:04:47 . Memory (MB): peak = 4414.582 ; gain = 2867.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:56 ; elapsed = 00:04:47 . Memory (MB): peak = 4414.582 ; gain = 2867.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:57 ; elapsed = 00:04:47 . Memory (MB): peak = 4414.582 ; gain = 2867.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:57 ; elapsed = 00:04:47 . Memory (MB): peak = 4414.582 ; gain = 2867.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:03 ; elapsed = 00:04:54 . Memory (MB): peak = 4414.582 ; gain = 2867.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:04:03 ; elapsed = 00:04:54 . Memory (MB): peak = 4414.582 ; gain = 2867.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    16|
+|3     |LUT1   |     1|
+|4     |LUT2   |   157|
+|5     |LUT3   |  7083|
+|6     |LUT4   |    27|
+|7     |LUT5   |  7720|
+|8     |LUT6   |  8099|
+|9     |MUXF7  |   504|
+|10    |FDRE   |  7612|
+|11    |IBUF   |     3|
+|12    |OBUF   |   161|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       | 31384|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:04:03 ; elapsed = 00:04:54 . Memory (MB): peak = 4414.582 ; gain = 2867.414
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:04:03 ; elapsed = 00:04:55 . Memory (MB): peak = 4414.582 ; gain = 2867.414
+Synthesis Optimization Complete : Time (s): cpu = 00:04:03 ; elapsed = 00:04:55 . Memory (MB): peak = 4414.582 ; gain = 2867.414
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.285 . Memory (MB): peak = 4414.582 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 520 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'game_of_life' is not ideal for floorplanning, since the cellview 'game_of_life' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 4414.582 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 4576d27c
+INFO: [Common 17-83] Releasing license: Synthesis
+21 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:04:08 ; elapsed = 00:05:01 . Memory (MB): peak = 4414.582 ; gain = 2876.730
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ruifa/Documents/Vivado/game_of_life_0_2/game_of_life_0_2.runs/synth_1/game_of_life.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 4414.582 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file game_of_life_utilization_synth.rpt -pb game_of_life_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Nov  6 21:12:15 2023...
